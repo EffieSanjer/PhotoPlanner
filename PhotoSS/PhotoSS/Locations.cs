@@ -4,15 +4,15 @@ using System.Text;
 
 namespace PhotoSS
 {
-    class People
+    class Locations
     {
         private int id;
-        private string fio;
-        private bool is_client;
+        private string name;
+        private string address;
         private string phone;
-        private string mail;
         private string social_media;
-        private string password;
-        private string price; //JSON
+        private string note;
+        private double latitude;
+        private double longitude;
     }
 }
