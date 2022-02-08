@@ -23,5 +23,7 @@ namespace PhotoSS.UWP
 
             LoadApplication(new PhotoSS.App());
         }
+
+      
     }
 }

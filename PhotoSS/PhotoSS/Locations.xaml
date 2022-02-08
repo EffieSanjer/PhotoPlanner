@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoSS.Locations"
+             Title="Locations">
+    <ContentPage.Content>
+        <Grid  Background="#786A6A">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400" ></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" FontSize="30" FontFamily="header">Локации (Ниже будет карта)</Label>
+
+            <StackLayout Grid.Row="1" Background="White"  Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="25" FontAttributes="Bold" FontFamily="header" >О локации</Label>
+                    <Button FontFamily="Phosphor" Text="&#xF602;" FontSize="25"></Button>
+                    <Button FontFamily="Phosphor" Text="&#xFD3B;" FontSize="25"></Button>
+                </StackLayout>
+
+                <Label FontSize="27" TextColor="Black" FontAttributes="Bold" FontFamily="header">One More Studio</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">Ленина 11</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">89494930430</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">Злой администратор</Label>
+                </StackLayout>
+        
+           
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

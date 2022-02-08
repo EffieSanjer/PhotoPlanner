@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoSS.Add_location">
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50">
+        </RowDefinition>
+        <RowDefinition Height="150"></RowDefinition>
+        <RowDefinition ></RowDefinition>
+    </Grid.RowDefinitions>
+    <StackLayout Orientation="Horizontal" >
+
+        <Label FontSize="40" FontFamily="header">Создание локации</Label>
+        <Button FontSize="40"   FontFamily="Phosphor" Text="&#xEF28;" >
+
+        </Button>
+
+    </StackLayout>
+    </Grid>
+</ContentPage>

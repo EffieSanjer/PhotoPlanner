@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="PhotoSS.Home"
+             Title="Home" >
+    
+    <ContentPage.Content >
+        <Grid  Background="#786A6A">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Padding="10" Grid.Row="0">
+                <Label FontSize="30" FontFamily="header">Добро пожаловать, Елена</Label>
+                <Label FontFamily="basic" FontSize="25" >Сегодня:</Label>
+                <Label ></Label>
+                <Label FontFamily="basic" FontSize="25">Запланировано съемок:</Label>
+                <Label></Label>
+            </StackLayout>
+            <StackLayout Padding="10" Grid.Row="1" Background="White">
+                <StackLayout Orientation="Horizontal">
+                <Label FontFamily="header" TextColor="Black" FontSize="27">Предстоящие съемки</Label>
+                    <Button FontFamily="Phosphor" Text="&#xF301;" FontSize="25"></Button>
+                </StackLayout>
+                <ScrollView Grid.Row="1" Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
+                          
+                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
+                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
+                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                    </StackLayout>
+                       <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
+                          
+                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
+                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
+                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
+                          
+                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
+                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
+                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
+                          
+                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
+                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
+                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
+                          
+                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
+                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
+                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                    </StackLayout>
+                     
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoSS.Finance"
+             Title="Finance">
+    <Grid  Background="#786A6A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150" ></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackLayout  Orientation="Vertical"  Grid.Row="0">
+        <StackLayout Orientation="Horizontal">
+            <Label Grid.Row="0" FontSize="30" FontFamily="header">Финансы</Label>
+                <Button FontFamily="Phosphor"   FontSize="25" Text="&#xEAD6;"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" >
+            <Editor WidthRequest="170"></Editor>
+            <Editor WidthRequest="170"></Editor>
+                
+        </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Grid.Row="1" Background="white">
+        <StackLayout  Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                    <Label FontSize="25" FontAttributes="Bold" TextColor="Black" FontFamily="header" >Расходы</Label>
+                <TableView>
+                    <TableView.Root ></TableView.Root>
+                </TableView>
+                
+            </StackLayout>
+
+          
+        </StackLayout>
+            <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <Label FontSize="25" FontAttributes="Bold" TextColor="Black" FontFamily="header" >Доходы</Label>
+                <TableView>
+                    <TableView.Root ></TableView.Root>
+                </TableView>
+                
+            </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+
+
+    </Grid>
+</ContentPage>
