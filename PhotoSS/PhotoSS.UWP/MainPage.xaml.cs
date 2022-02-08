@@ -15,13 +15,13 @@ using Windows.UI.Xaml.Navigation;
 
 namespace PhotoSS.UWP
 {
-    public sealed partial class MainPage
+    public sealed partial class MainPage : IAppContext
     {
         public MainPage()
         {
             this.InitializeComponent();
 
-            LoadApplication(new PhotoSS.App());
+            LoadApplication(new PhotoSS.App(this));
         }
     }
 }

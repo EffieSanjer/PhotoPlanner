@@ -10,9 +10,11 @@ namespace PhotoSS
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(Service service)
         {
             InitializeComponent();
+            //BindingContext = new ViewModel(service);
+            
         }
     }
 }

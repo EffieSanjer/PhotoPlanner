@@ -6,11 +6,18 @@ namespace PhotoSS
 {
     public partial class App : Application
     {
-        public App()
+        public IAppContext AppContext { get; }
+        public Service Service { get; }
+
+        public App(IAppContext context)
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            // Stores the app context
+            AppContext = context;
+            Service = new Service(context);
+
+            MainPage = new MainPage(Service);
         }
 
         protected override void OnStart()
