@@ -1,63 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
              x:Class="PhotoSS.Home"
-             Title="Home" >
+             Title="•">
     
     <ContentPage.Content >
-        <Grid  Background="#786A6A">
+        <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="200"></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="215"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
-            <StackLayout Padding="10" Grid.Row="0">
-                <Label FontSize="30" FontFamily="header">Добро пожаловать, Елена</Label>
-                <Label FontFamily="basic" FontSize="25" >Сегодня:</Label>
-                <Label ></Label>
-                <Label FontFamily="basic" FontSize="25">Запланировано съемок:</Label>
+            <StackLayout StyleClass="layout" Grid.Row="0">
+                <Label StyleClass="layout-header" x:Name="welcome_name" ></Label>
+                <Label StyleClass="layout-basic" x:Name="today_label" ></Label>
+                <Label StyleClass="layout-basic" x:Name="photo_count" ></Label>
                 <Label></Label>
             </StackLayout>
-            <StackLayout Padding="10" Grid.Row="1" Background="White">
-                <StackLayout Orientation="Horizontal">
-                <Label FontFamily="header" TextColor="Black" FontSize="27">Предстоящие съемки</Label>
-                    <Button FontFamily="Phosphor" Text="&#xF301;" FontSize="25"></Button>
-                </StackLayout>
-                <ScrollView Grid.Row="1" Orientation="Horizontal">
+            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+                <StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
-                          
-                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
-                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
-                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
+                        <Label StyleClass="black-header" HorizontalOptions="StartAndExpand" Text="Предстоящие съемки"></Label>
+                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                        <Button StyleClass="icon-button" Text="&#xF301;" ></Button>
                     </StackLayout>
-                       <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
-                          
-                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
-                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
-                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
-                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
-                          
-                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
-                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
-                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
-                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
-                          
-                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
-                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
-                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
-                    </StackLayout>  <StackLayout Orientation="Vertical" BackgroundColor="Black" WidthRequest="200" HeightRequest="300"  Margin="10" Padding="10">
-                          
-                            <Label FontFamily="basic" FontSize="25" TextColor="White"> Ольга</Label>
-                            <Label  TextColor="White" FontFamily="basic" FontSize="25" > 20.01.20222</Label>
-                            <Label TextColor="White" FontFamily="basic" FontSize="25" > Element Studio</Label>
-                    </StackLayout>
-                     
 
-                    </StackLayout>
-                </ScrollView>
-            </StackLayout>
-            
+                    <CarouselView Grid.Row="2" ItemsSource="{Binding}" Margin="-20,0,0,0" PeekAreaInsets="20" Loop="False">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Orientation="Horizontal" >
+                                    <AbsoluteLayout StyleClass="main-ph">
+                                        <Image AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"  Source="{Binding Image}" ></Image>
+                                        <FlexLayout Padding="20,0,0,20"  Direction="Column" JustifyContent="End">
+                                            <Label StyleClass="first-label" Text="{Binding Name}"></Label>
+                                            <Label Text="{Binding Date}"></Label>
+                                            <Label Text="{Binding Studio}" ></Label>
+                                        </FlexLayout>
+                                    </AbsoluteLayout>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                </StackLayout>
+            </Frame>
+            <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

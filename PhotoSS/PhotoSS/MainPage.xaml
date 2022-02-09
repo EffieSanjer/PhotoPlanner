@@ -2,9 +2,11 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhotoSS.MainPage"
-            BarBackgroundColor="Black"
+            BarBackgroundColor="White"
             SelectedTabColor="#786A6A"
-      
+            UnselectedTabColor="#BF000000"
+            
+            
             xmlns:local="clr-namespace:PhotoSS;assembly=PhotoSS"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
@@ -12,35 +14,25 @@
              <!--xmlns:local="clr-namespace:PhotoSS;assembly=PhotoSS"-->
             
             <!--xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom"--> 
-           
+            android:TabbedPage.ToolbarPlacement="Bottom"-->
 
-    <TabbedPage.Children >
 
+    <TabbedPage.Children  >
+        <local:Home IconImageSource="house.png"  ></local:Home>
+        <local:Request Title=""  IconImageSource="listplus.png"></local:Request>
+        <local:Locations Title="" IconImageSource="mappin.png"></local:Locations>
+        <local:Finance Title="" IconImageSource="currencydollar.png"></local:Finance>
+        <local:Profile Title="" IconImageSource="user.png"></local:Profile>
         
-        <local:Home></local:Home>
-        <local:Request></local:Request>
-        <local:Locations></local:Locations>
-        <local:Finance></local:Finance>
         <!--<Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF059;" >
-
         </Button>
         <Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF085;" >
-
         </Button>
         <Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF4AB;" >
-
         </Button>
         <Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xEF6C;" >
-
         </Button>
-
         <Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF202;">
-
         </Button>-->
-
-
     </TabbedPage.Children>
-
-
 </TabbedPage>

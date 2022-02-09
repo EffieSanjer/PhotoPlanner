@@ -6,16 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-
-
 namespace PhotoSS
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainPage
     {
         public MainPage()
         {
-            this.InitializeComponent();
-
+            InitializeComponent();
+            
         }
+
+        
     }
 }

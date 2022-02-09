@@ -1,0 +1,63 @@
+﻿
+grid {
+    background-color: #786A6A;
+}
+
+.icon-button { /*Иконки-кнопки*/
+    background-color: Transparent;
+    width: 30;
+    height: 30;
+    padding: 0;
+    font-family: Phosphor;
+    font-size: 32;
+}
+
+/*****Розовая подложка (возможно будет менять цвет)******/
+.layout { 
+    background-color: #786A6A;
+    padding: 25 20;
+}
+.layout-header { /*Заголовок подложки*/
+    font-family: header;
+    color: white;
+    font-size: 29;
+    padding-bottom: 20;
+}
+.layout-basic { /*Текст подложки*/
+    font-family: basic;
+    color: white;
+    font-size: 21;
+}
+
+/******Основной белый фрейм******/
+.white-frame { 
+    background-color: white;
+    border-radius: 16;
+    HasShadow: False;
+    padding: 25;
+    color: black;
+}
+.black-header { /*Заголовок на фрейме */
+    font-family: header;
+    font-size: 22;
+    padding-bottom: 10;
+}
+
+/*****HOME PAGE*****/
+.main-ph { /*Flex с карточками на главной*/
+    color: white;
+    font-family: basic;
+    font-size: 19;
+    background-color: black;
+    margin: 0, 10, 0, 10;
+    width: 240;
+    height: 360;
+    /*HorizontalOptions: FillAndExpend;*/
+}
+.main-ph image {
+    opacity: 0.5;
+}
+.main-ph .first-label {
+    font-size: 32;
+    font-weight: 700;
+}
