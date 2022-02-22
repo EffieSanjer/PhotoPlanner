@@ -7,7 +7,7 @@ namespace PhotoSS
     public partial class App : Application
     {
         public IAppContext AppContext { get; }
-        public Service Service { get; }
+        //Service Service { get; }
 
         public App(IAppContext context)
         {
@@ -15,9 +15,10 @@ namespace PhotoSS
 
             // Stores the app context
             AppContext = context;
-            Service = new Service(context);
+            //Service = new Service(context);
 
-            MainPage = new MainPage(Service);
+            //MainPage = new MainPage(Service);
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
