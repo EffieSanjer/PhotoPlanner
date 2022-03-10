@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoSS.One_day"
+             Title="One_day">
+    <ContentPage.Content >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="16" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout StyleClass="layout" Grid.Row="0">
+                <Label StyleClass="layout-header" Text="Январь 2022" ></Label>
+
+                <Label></Label>
+            </StackLayout>
+            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <!--<Label StyleClass="black-header" HorizontalOptions="StartAndExpand" Text="Январь 2022"></Label>-->
+                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                    </StackLayout>
+                    <Label Grid.Row='2' FontSize="28" Text="22 января" HorizontalOptions="Center"></Label>
+                    <Label Grid.Row='2' FontSize="25"  HorizontalOptions="Center" Text="Пятница"></Label>
+                    <ScrollView Padding="10"  Grid.Row="1" Orientation="Vertical">
+
+                        <StackLayout Orientation="Vertical">
+                            
+                        
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </ScrollView>
+
+                </StackLayout>
+            </Frame>
+            <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

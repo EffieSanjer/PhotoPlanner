@@ -10,13 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace PhotoSS
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Profile : ContentPage
+    public partial class Add_ph : ContentPage
     {
-        public Profile()
+        public Add_ph()
         {
             InitializeComponent();
         }
-
     }
-
 }

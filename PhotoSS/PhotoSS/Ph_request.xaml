@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoSS.Ph_request">
+    <ContentPage.Content >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="16" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout  StyleClass="layout" Grid.Row="0">
+             
+                <Label></Label>
+            </StackLayout>
+            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <!--<Label StyleClass="black-header" HorizontalOptions="StartAndExpand" Text="Предстоящие съемки"></Label>-->
+                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                        <Label StyleClass="black-header" Text="Ольга" ></Label>
+                        <Label StyleClass="black-header" Text="12.03.14 12:00"></Label>
+                        <StackLayout  Orientation="Horizontal">
+                            <StackLayout Orientation="Vertical" >
+                                <Label StyleClass="black-header" Text="One More " ></Label>
+                                <Label StyleClass="black-header" Text="Зал №2 " VerticalOptions="StartAndExpand"></Label>
+                            </StackLayout>
+                            <Label StyleClass="black-header" Text="3000р/ч" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                                
+                            </Label>
+                  </StackLayout>
+                        <Line X1="12" X2="222" BackgroundColor="Gray"></Line>
+                        <Label StyleClass="black-header" Text="Описание"></Label>
+                        <Label StyleClass="layout-basic" TextColor="Black" Text="Съемка в циклораме в костюме темного цвета "></Label>
+                        <Line X1="12" X2="222" BackgroundColor="Gray"></Line>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+                            <Button Text="Принять заявку" WidthRequest="170" StyleClass="positive-button"  Margin="0,0,2,0" Padding="20"></Button>
+                            <Button  Text="Отклонить заявку"  WidthRequest="170" StyleClass="negative-button"  ></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+                
+                </StackLayout>
+            </Frame>
+            <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
