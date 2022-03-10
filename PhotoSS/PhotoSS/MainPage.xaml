@@ -23,7 +23,13 @@
         <local:Locations Title="" IconImageSource="mappin.png"></local:Locations>
         <local:Finance Title="" IconImageSource="currencydollar.png"></local:Finance>
         <local:Profile Title="" IconImageSource="user.png"></local:Profile>
-        
+        <local:Ph_calendar Title="Ph_calendar" ></local:Ph_calendar>
+        <local:Ph_request Title="Ph_request" ></local:Ph_request>
+        <local:Add_location Title="Add_location" ></local:Add_location>
+        <local:Portfolio Title="Portfolio" ></local:Portfolio>
+        <local:Add_ph Title="Add_ph" ></local:Add_ph>
+        <local:One_day Title="One_da" ></local:One_day>
+
         <!--<Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF059;" >
         </Button>
         <Button FontFamily="Phosphor" FontSize="50" TextColor="Black" WidthRequest="100" Text="&#xF085;" >

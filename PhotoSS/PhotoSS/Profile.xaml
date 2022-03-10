@@ -1,12 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PhotoSS.Profile">
+             x:Class="PhotoSS.Profile"
+               xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             Title="Profile">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid  Background="#786A6A">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="16" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout  StyleClass="layout" Grid.Row="0" Orientation="Horizontal"  >
+
+                <Label Text="Профиль" FontSize="30" StyleClass="layout-header"></Label>
+                <Button FontFamily="Phosphor" Background="#786A6A" BorderColor="#786A6A" StyleClass="positive-button" Text="&#xECE6;" FontSize="25" WidthRequest="45"  HorizontalOptions="EndAndExpand"></Button>
+                <Button FontFamily="Phosphor" Background="#786A6A" Text="&#xF013;" FontSize="25" StyleClass="positive-button" WidthRequest="45"  ></Button>
+            </StackLayout>
+            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <!--<Label StyleClass="black-header" HorizontalOptions="StartAndExpand" Text="Предстоящие съемки"></Label>-->
+                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                      
+                            <StackLayout Orientation="Horizontal"  >
+                                <StackLayout Orientation="Vertical" >
+                                    
+                                    <Label  StyleClass="black-header" Text="Елена "></Label>
+                                    <Label StyleClass="black-header"  Text="Самохвалова"></Label>
+                                    <Label Text="Фотограф"></Label>
+                                </StackLayout>
+                            <Frame CornerRadius="50" HeightRequest="100" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" WidthRequest="100" Margin="0" Padding="0" >
+                                <Image   Aspect="Fill" HorizontalOptions="EndAndExpand" Source="profile" />
+
+                            </Frame>
+                            <!--<Image  Source="image3" HeightRequest="100" HorizontalOptions="End" />-->
+
+                            <!--<AbsoluteLayout StyleClass="main-ph">
+                                <Image  AbsoluteLayout.LayoutBounds="1,1,1,1"    AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"  Source="image3" ></Image>
+                               
+                            </AbsoluteLayout>-->
+                        </StackLayout>
+                            <StackLayout Orientation="Vertical">
+                                <Label StyleClass="black-header" Text="Instagram"></Label>
+                                <Label Text="@elena_ph"></Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical">
+                                <Label StyleClass="black-header" Text="Номер телефона"></Label>
+                            <Label Text="89675654654" ></Label>
+                        </StackLayout>
+                            <StackLayout Orientation="Vertical">
+                            <Label StyleClass="black-header" Text="Прайс"></Label>
+                           
+                        </StackLayout>
+                        </StackLayout>
+
+                       
+
+
+                </StackLayout>
+            </Frame>
+            <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

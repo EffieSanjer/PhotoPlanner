@@ -5,21 +5,23 @@
              Title="Finance">
     <Grid  Background="#786A6A">
         <Grid.RowDefinitions>
-            <RowDefinition Height="150" ></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="16" ></RowDefinition>
         </Grid.RowDefinitions>
-        <StackLayout  Orientation="Vertical"  Grid.Row="0">
+        <StackLayout StyleClass="layout" Orientation="Vertical"  Grid.Row="0">
         <StackLayout Orientation="Horizontal">
-            <Label Grid.Row="0" FontSize="30" FontFamily="header">Финансы</Label>
-                <Button FontFamily="Phosphor"   FontSize="25" Text="&#xEAD6;"></Button>
+                <Label StyleClass="layout-header" Grid.Row="0" FontSize="30" FontFamily="header">Финансы</Label>
+                <Button StyleClass="layout-header" FontFamily="Phosphor"  BorderColor="#786A6A" BackgroundColor="#786A6A"  FontSize="30" Text="&#xF718;" HorizontalOptions="EndAndExpand"></Button>
         </StackLayout>
         <StackLayout Orientation="Horizontal" >
-            <Editor WidthRequest="170"></Editor>
-            <Editor WidthRequest="170"></Editor>
-                
+                <Editor Background="white" Placeholder="от" WidthRequest="110" PlaceholderColor="Gray"   ></Editor>
+                <Editor Placeholder="до" Background="white"  WidthRequest="110" PlaceholderColor="Gray"></Editor>
+                <Label StyleClass="layout-header" Text="12.01-19.01" FontSize="20" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" ></Label>
         </StackLayout>
         </StackLayout>
-        <StackLayout Orientation="Vertical" Grid.Row="1" Background="white">
+        <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+            <StackLayout Orientation="Vertical" Grid.Row="2" Background="white">
         <StackLayout  Orientation="Vertical">
             <StackLayout Orientation="Vertical">
                     <Label FontSize="25" FontAttributes="Bold" TextColor="Black" FontFamily="header" >Расходы</Label>
@@ -42,7 +44,8 @@
 
             </StackLayout>
         </StackLayout>
-
+        </Frame>
+        <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
 
     </Grid>
 </ContentPage>

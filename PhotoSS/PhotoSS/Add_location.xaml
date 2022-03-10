@@ -1,21 +1,60 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PhotoSS.Add_location">
-    <Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="50">
-        </RowDefinition>
-        <RowDefinition Height="150"></RowDefinition>
-        <RowDefinition ></RowDefinition>
-    </Grid.RowDefinitions>
-    <StackLayout Orientation="Horizontal" >
+                          x:Class="PhotoSS.Add_location">
 
-        <Label FontSize="40" FontFamily="header">Создание локации</Label>
-        <Button FontSize="40"   FontFamily="Phosphor" Text="&#xEF28;" >
+    
+    <ContentPage.Content >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="215"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="16" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout  StyleClass="layout" Grid.Row="0" Orientation="Vertical" >
+                <StackLayout Orientation="Horizontal">
+                <Label FontSize="30" StyleClass="layout-header"  FontFamily="header">Создание локации</Label>
+                <!--<Button FontSize="50"   FontFamily="Phosphor" Text="&#xEF28;" >-->
 
-        </Button>
+                <!--</Button>-->
+                </StackLayout>
+            </StackLayout>
+            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <Label  HorizontalOptions="StartAndExpand" Text="О локации" TextColor="Black" StyleClass="black-header "></Label>
 
-    </StackLayout>
-    </Grid>
+                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                        <Editor Placeholder="Название" PlaceholderColor="Gray" StyleClass="editor" ></Editor>
+                        <Editor Placeholder="Адрес" PlaceholderColor="Gray" StyleClass="editor"></Editor>
+                        <Editor Placeholder="Номер телефона" PlaceholderColor="Gray" Keyboard="Telephone" StyleClass="editor"></Editor>
+                        <Editor Placeholder="Описание" PlaceholderColor="Gray" StyleClass="editor" AutoSize="TextChanges" ></Editor>
+                        <Button  Text="Сохранить" StyleClass="positive-button"></Button>
+                    </StackLayout>
+
+                    <CarouselView Grid.Row="2" ItemsSource="{Binding}" Margin="-20,0,0,0" PeekAreaInsets="20" Loop="False">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Orientation="Horizontal" >
+                                    <AbsoluteLayout StyleClass="main-ph">
+                                        <Image AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"  Source="{Binding Image}" ></Image>
+                                        <FlexLayout Padding="20,0,0,20"  Direction="Column" JustifyContent="End">
+                                            <Label StyleClass="first-label" Text="{Binding Name}"></Label>
+                                            <Label Text="{Binding Date}"></Label>
+                                            <Label Text="{Binding Studio}" ></Label>
+                                        </FlexLayout>
+                                    </AbsoluteLayout>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                </StackLayout>
+            </Frame>
+            <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

@@ -88,7 +88,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\sportscar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\sportscar.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PhotoSS\PhotoSS.csproj">
@@ -97,31 +97,37 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\house.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\house.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\listplus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\listplus.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\mappin.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\mappin.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\currencydollar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\currencydollar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image2.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image3.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\user.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
