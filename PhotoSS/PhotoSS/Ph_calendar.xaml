@@ -26,6 +26,11 @@
                     <StackLayout Orientation="Vertical">
 
                         <Button StyleClass="icon-button" Text="&#xF11B;"  HorizontalOptions="End"  ></Button>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                        <Button StyleClass="icon-button" Text="&#xF11B;"   ></Button>
                     </StackLayout>
 
                     <ScrollView Padding="10"  Grid.Row="1" Orientation="Vertical">
@@ -45,11 +50,6 @@
                             <StackLayout Orientation="Horizontal" BackgroundColor=" #373737 "  HeightRequest="114" >
                                 <Image Source="image3" ></Image>
                                 <StackLayout Orientation="Vertical"  VerticalOptions="Center" Padding="5,0,0,0">
-                                    <Label  FontFamily="basic" FontSize="25" TextColor="White" Text="Ольга"></Label>
-                                    <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
-                                    <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
-                                </StackLayout>
-
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" BackgroundColor=" #373737"  HeightRequest="114" >
                                 <Image Source="image2" ></Image>
@@ -58,7 +58,7 @@
                                     <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
                                     <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
                                 </StackLayout>
-
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" BackgroundColor="Black"  HeightRequest="114" >
                                 <Image Source="profile" ></Image>
@@ -67,10 +67,15 @@
                                     <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
                                     <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
                                 </StackLayout>
+                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
+                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
+
 
                             </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
 
-
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
 
 
 

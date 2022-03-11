@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhotoSS.Locations"
              Title="Locations" 
+
+             
  >
     
     
@@ -27,10 +29,10 @@
                     <StackLayout Orientation="Horizontal">
                         <Label FontSize="30"  TextColor="Black" StyleClass="black-header" HorizontalOptions="FillAndExpand" FontFamily="header" >О локации</Label>
                         <Button FontFamily="Phosphor"  StyleClass="negative-button" BorderColor="White" WidthRequest="45" Text="&#xF602;" FontSize="25"></Button>
-                        <Button FontFamily="Phosphor" Text="&#xFD3B;" StyleClass="negative-button" BorderColor="White" WidthRequest="45" FontSize="25"></Button>
+                        <Button FontFamily="Phosphor" Text="&#xF513;" StyleClass="negative-button" BorderColor="White" WidthRequest="45" FontSize="25"></Button>
                     </StackLayout>
 
-                    <Label FontSize="25" TextColor="Black" FontAttributes="Bold" FontFamily="header">One More Studio</Label>
+                    <Label FontSize="25" TextColor="Black"  FontFamily="header">One More Studio</Label>
                     <Label FontFamily="basic" TextColor="Black" FontSize="23">Ленина 11</Label>
                     <Label FontFamily="basic" TextColor="Black" FontSize="23">89494930430</Label>
                     <Label FontFamily="basic" TextColor="Black" FontSize="23">Злой администратор</Label>

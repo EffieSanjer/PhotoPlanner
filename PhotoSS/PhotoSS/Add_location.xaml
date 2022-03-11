@@ -16,6 +16,7 @@
                 <!--<Button FontSize="50"   FontFamily="Phosphor" Text="&#xEF28;" >-->
 
                 <!--</Button>-->
+                </StackLayout>
             </StackLayout>
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
                 <StackLayout>
