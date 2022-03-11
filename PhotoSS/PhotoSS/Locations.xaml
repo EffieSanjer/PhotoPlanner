@@ -17,26 +17,19 @@
                 <RowDefinition Height="*" ></RowDefinition>
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
-            <StackLayout  StyleClass="layout" Grid.Row="0" Orientation="Vertical" >
+            <Label Grid.Row="0" FontSize="30" FontFamily="header">Локации (Ниже будет карта)</Label>
+
+            <StackLayout Grid.Row="1" Background="White"  Orientation="Vertical">
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="30" StyleClass="layout-header" >Локации</Label>
-                    <Button StyleClass="icon-button" TextColor="White" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"   Text="&#xF11B;" ></Button>
+                    <Label FontSize="25" FontAttributes="Bold" FontFamily="header" >О локации</Label>
+                    <Button FontFamily="Phosphor" Text="&#xF602;" FontSize="25"></Button>
+                    <Button FontFamily="Phosphor" Text="&#xFD3B;" FontSize="25"></Button>
                 </StackLayout>
 
-            </StackLayout>
-            <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
-
-                <StackLayout  Grid.Row="1" Background="White"  Orientation="Vertical">
-                    <StackLayout Orientation="Horizontal">
-                        <Label FontSize="30"  TextColor="Black" StyleClass="black-header" HorizontalOptions="FillAndExpand" FontFamily="header" >О локации</Label>
-                        <Button FontFamily="Phosphor"  StyleClass="negative-button" BorderColor="White" WidthRequest="45" Text="&#xF602;" FontSize="25"></Button>
-                        <Button FontFamily="Phosphor" Text="&#xF513;" StyleClass="negative-button" BorderColor="White" WidthRequest="45" FontSize="25"></Button>
-                    </StackLayout>
-
-                    <Label FontSize="25" TextColor="Black"  FontFamily="header">One More Studio</Label>
-                    <Label FontFamily="basic" TextColor="Black" FontSize="23">Ленина 11</Label>
-                    <Label FontFamily="basic" TextColor="Black" FontSize="23">89494930430</Label>
-                    <Label FontFamily="basic" TextColor="Black" FontSize="23">Злой администратор</Label>
+                <Label FontSize="27" TextColor="Black" FontAttributes="Bold" FontFamily="header">One More Studio</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">Ленина 11</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">89494930430</Label>
+                <Label FontFamily="basic" TextColor="Black" FontSize="25">Злой администратор</Label>
                 </StackLayout>
             </Frame>
             <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>

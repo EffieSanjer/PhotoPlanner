@@ -15,9 +15,9 @@
                 <Button StyleClass="layout-header" FontFamily="Phosphor"  BorderColor="#786A6A" BackgroundColor="#786A6A"  FontSize="30" Text="&#xF718;" HorizontalOptions="EndAndExpand"></Button>
         </StackLayout>
         <StackLayout Orientation="Horizontal" >
-                <Editor Background="white" Placeholder="от" WidthRequest="110" PlaceholderColor="Gray"   ></Editor>
-                <Editor Placeholder="до" Background="white"  WidthRequest="110" PlaceholderColor="Gray"></Editor>
-                <Label StyleClass="layout-header" Text="12.01-19.01" FontSize="20" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" ></Label>
+            <Editor WidthRequest="170"></Editor>
+            <Editor WidthRequest="170"></Editor>
+                
         </StackLayout>
         </StackLayout>
         <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">

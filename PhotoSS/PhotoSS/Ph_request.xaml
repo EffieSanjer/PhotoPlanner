@@ -33,7 +33,6 @@
                                 
                             </Label>
                   </StackLayout>
-                        <Line X1="12" X2="222" BackgroundColor="Gray"></Line>
                         <Label StyleClass="black-header" Text="Описание"></Label>
                         <Label StyleClass="layout-basic" TextColor="Black" Text="Съемка в циклораме в костюме темного цвета "></Label>
                         <Line X1="12" X2="222" BackgroundColor="Gray"></Line>

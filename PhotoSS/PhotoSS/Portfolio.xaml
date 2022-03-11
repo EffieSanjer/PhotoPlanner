@@ -5,7 +5,6 @@
     <ContentPage.Content>
         <Grid  >
             <Grid.RowDefinitions>
-                <RowDefinition Height="110"></RowDefinition>
                 <RowDefinition Height="*" ></RowDefinition>
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
@@ -27,8 +26,12 @@
                         <Image Source="image3"  Margin="0,0,0,19"  WidthRequest="335"/>     <Image Source="image1"   WidthRequest="150"/>
                         <Image Source="profile"  WidthRequest="173"/>
                         <Image Source="image3" Margin="0,0,0,19"   WidthRequest="335"/>
-                       
-                          
+                    
+                            <Image Source="image3"  HeightRequest="85" WidthRequest="160"/>
+                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
+                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
+                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
+                         
                     </FlexLayout>
                   
                 </ScrollView>
