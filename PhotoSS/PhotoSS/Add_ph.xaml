@@ -10,8 +10,8 @@
                 <RowDefinition Height="*" ></RowDefinition>
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
-            <StackLayout  StyleClass="layout" Grid.Row="0">
-
+            <StackLayout  StyleClass="layout" Grid.Row="0" Padding="0" >
+                <Image Source="image1" WidthRequest="120"  />
                 <Button Text="Загрузить фото" VerticalOptions="EndAndExpand" StyleClass="positive-button" ></Button>
             </StackLayout>
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
@@ -23,34 +23,37 @@
                                 <TapGestureRecognizer Command=""></TapGestureRecognizer>
                             </Label.GestureRecognizers>
                         </Label>-->
-                        <Label StyleClass="black-header" Text="Ольга" ></Label>
+                        <Label StyleClass="black-header" TextColor="Black" Text="Ольга" ></Label>
                         <StackLayout Orientation="Horizontal" >
                             <Label TextColor="Black" Text="Статус" VerticalOptions="Center"></Label>
                             <Picker Title="оплачено" TitleColor="Black" WidthRequest="100" ></Picker>
-                        </StackLayout> <StackLayout Orientation="Horizontal" >
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
                             <Label TextColor="Black" Text="Категория" VerticalOptions="Center"></Label>
                             <Picker Title="творечкая" TitleColor="Black" WidthRequest="100" ></Picker>
-                        </StackLayout> 
-                    <StackLayout Orientation="Horizontal" >
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
                             <DatePicker  TextColor="Black"></DatePicker>
-                            <Entry Placeholder="Дата" PlaceholderColor="Black"></Entry>
-                            <Entry></Entry>
+                            <!--<Entry Placeholder="Дата" PlaceholderColor="Black"></Entry>-->
+                            <!--<Entry></Entry>-->
+                            <Entry PlaceholderColor="Black" Placeholder="12:00"></Entry>
+                            <StackLayout Orientation="Horizontal" >
+                                <Label TextColor="Black" Text="Локация" VerticalOptions="Center"></Label>
+                                <Entry Placeholder="Локация" PlaceholderColor="Black" WidthRequest="100"></Entry>
+
+                                <!--<Picker></Picker>-->
+                            </StackLayout>
+
                         </StackLayout>
-                        <Label StyleClass="black-header" Text="12.03.14 12:00"></Label>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" >
-                        <Label TextColor="Black" Text="Локация" VerticalOptions="Center"></Label>
-                        <Entry Placeholder="Локация" PlaceholderColor="Black" WidthRequest="100"></Entry>
-
-                        <Picker></Picker>
+                        <Label Text="Описание" StyleClass="black-header" TextColor="Black" ></Label>
+                        <Entry></Entry>
                     </StackLayout>
 
-                   
-                        <StackLayout Orientation="Vertical" >
-                            <!--<Button  BackgroundColor="Black" TextColor="White" Text="Отклонить заявку" BorderColor="Black"></Button>-->
+                    <StackLayout Orientation="Vertical" >
+                        <!--<Button  BackgroundColor="Black" TextColor="White" Text="Отклонить заявку" BorderColor="Black"></Button>-->
                         <Button  Text="Сохранить" StyleClass="positive-button" VerticalOptions="EndAndExpand"  ></Button>
-                        </StackLayout>
                     </StackLayout>
+                </StackLayout>
 
 
             </Frame>

@@ -17,8 +17,8 @@
             </Grid.RowDefinitions>
             <StackLayout  StyleClass="layout" Grid.Row="0" Orientation="Horizontal"  >
 
-                <Label FontSize="30" FontFamily="header">Локации</Label>
-                <Button StyleClass="icon-button" VerticalOptions="Start"  HorizontalOptions="EndAndExpand" Text="&#xF11B;" ></Button>
+                <Label FontSize="30" StyleClass="layout-header" >Локации</Label>
+                <Button StyleClass="icon-button" TextColor="White" FontSize="25" VerticalOptions="Start" HorizontalOptions="EndAndExpand"   Text="&#xF11B;" ></Button>
 
             </StackLayout>
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">

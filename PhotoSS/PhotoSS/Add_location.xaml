@@ -12,7 +12,7 @@
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
             <StackLayout StyleClass="layout" Grid.Row="0" Orientation="Horizontal">
-                <Label FontSize="25" FontFamily="header">Создание локации</Label>
+                <Label FontSize="30" StyleClass="layout-header"  FontFamily="header">Создание локации</Label>
                 <!--<Button FontSize="50"   FontFamily="Phosphor" Text="&#xEF28;" >-->
 
                 <!--</Button>-->
@@ -20,7 +20,7 @@
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
                 <StackLayout>
                     <StackLayout Orientation="Vertical">
-                        <Label  HorizontalOptions="StartAndExpand" Text="О локации" StyleClass="editor"></Label>
+                        <Label  HorizontalOptions="StartAndExpand" Text="О локации" TextColor="Black" StyleClass="black-header "></Label>
                         <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command=""></TapGestureRecognizer>
@@ -29,8 +29,9 @@
                         <Editor Placeholder="Название" PlaceholderColor="Gray" StyleClass="editor" ></Editor>
                         <Editor Placeholder="Адрес" PlaceholderColor="Gray" StyleClass="editor"></Editor>
                         <Editor Placeholder="Номер телефона" PlaceholderColor="Gray" Keyboard="Telephone" StyleClass="editor"></Editor>
-                        <Editor Placeholder="Описание" PlaceholderColor="Gray" StyleClass="editor"  ></Editor>
-                        <Button  Text="Сохранить"  ></Button>
+                        <Editor Placeholder="Описание" PlaceholderColor="Gray" StyleClass="editor" AutoSize="TextChanges" ></Editor>
+                        <Button  Text="Сохранить" StyleClass="positive-button"></Button>
+
                     </StackLayout>
 
                     <CarouselView Grid.Row="2" ItemsSource="{Binding}" Margin="-20,0,0,0" PeekAreaInsets="20" Loop="False">

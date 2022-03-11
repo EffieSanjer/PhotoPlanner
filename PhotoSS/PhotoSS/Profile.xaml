@@ -25,28 +25,40 @@
                                 <TapGestureRecognizer Command=""></TapGestureRecognizer>
                             </Label.GestureRecognizers>
                         </Label>-->
-                      
-                            <StackLayout Orientation="Horizontal"  >
-                                <StackLayout Orientation="Vertical">
-                                    <Label StyleClass="black-header" Text="Елена Самохвалова"></Label>
-                                    <Label Text="Фотограф"></Label>
-                                </StackLayout>
-                            <!--<Image  Source="profile.jpg" HeightRequest="22" />-->
-                        </StackLayout>
-                            <StackLayout Orientation="Vertical">
-                                <Label StyleClass="black-header" Text="Instagram"></Label>
-                                <Label Text="@elena_ph"></Label>
-                            </StackLayout>
-                            <StackLayout Orientation="Vertical">
-                                <Label StyleClass="black-header" Text="Номер телефона"></Label>
-                                <Label Text="89675654654" ></Label>
-                            </StackLayout>
-                            <StackLayout Orientation="Vertical">
-                            <Label StyleClass="black-header" Text="Прайс"></Label>
-                        </StackLayout>
-                        </StackLayout>
 
-                       
+                        <StackLayout Orientation="Horizontal"  >
+                            <StackLayout Orientation="Vertical" >
+
+                                <Label  StyleClass="black-header" TextColor="Black" Text="Елена "></Label>
+                                <Label StyleClass="black-header"  TextColor="Black" Text="Самохвалова"></Label>
+                                <Label Text="Фотограф"></Label>
+                            </StackLayout>
+                            <Frame CornerRadius="50" HeightRequest="100" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" WidthRequest="100" Margin="0" Padding="0" >
+                                <Image   Aspect="Fill" HorizontalOptions="EndAndExpand" Source="profile" />
+
+                            </Frame>
+                            <!--<Image  Source="image3" HeightRequest="100" HorizontalOptions="End" />-->
+
+                            <!--<AbsoluteLayout StyleClass="main-ph">
+                                <Image  AbsoluteLayout.LayoutBounds="1,1,1,1"    AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"  Source="image3" ></Image>
+                               
+                            </AbsoluteLayout>-->
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Label StyleClass="black-header" Text="Instagram"></Label>
+                            <Label Text="@elena_ph"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Label StyleClass="black-header" Text="Номер телефона"></Label>
+                            <Label Text="89675654654" ></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Label StyleClass="black-header" Text="Прайс"></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
 
 
                 </StackLayout>

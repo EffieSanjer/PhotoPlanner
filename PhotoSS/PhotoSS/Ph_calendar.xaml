@@ -5,32 +5,27 @@
              x:Class="PhotoSS.Ph_calendar"
 
 >
-    
+
     <ContentPage.Content >
         <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="420"></RowDefinition>
+                <RowDefinition Height="310"></RowDefinition>
                 <RowDefinition Height="*" ></RowDefinition>
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
             <StackLayout Padding="-10" StyleClass="layout" Grid.Row="0">
                 <plugin:Calendar MonthLabelColor="Black"  VerticalOptions="Center"
         HorizontalOptions="Center"  YearLabelColor="Black" DayViewSize="30"   >
-       
+
 
                 </plugin:Calendar>
-              
+
             </StackLayout>
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
-                <StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <!--<Label StyleClass="black-header" HorizontalOptions="StartAndExpand" Text="Предстоящие съемки"></Label>-->
-                        <!--<Label StyleClass="black-header" HorizontalOptions="End" FontFamily="Phosphor" Text="&#xF301;" FontSize="32">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command=""></TapGestureRecognizer>
-                            </Label.GestureRecognizers>
-                        </Label>-->
-                        <Button StyleClass="icon-button" Text="&#xF11B;"   ></Button>
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Vertical">
+
+                        <Button StyleClass="icon-button" Text="&#xF11B;"  HorizontalOptions="End"  ></Button>
                     </StackLayout>
 
                     <ScrollView Padding="10"  Grid.Row="1" Orientation="Vertical">
@@ -38,42 +33,46 @@
                         <StackLayout Orientation="Vertical">
 
 
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+                            <StackLayout Orientation="Horizontal" BackgroundColor="#373737"  HeightRequest="114" >
+                                <Image Source="image1" ></Image>
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center" Padding="5,0,0,0">
+                                    <Label  FontFamily="basic" FontSize="25" TextColor="White" Text="Ольга"></Label>
+                                    <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
+                                    <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
+                                </StackLayout>
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
                             </StackLayout>
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+                            <StackLayout Orientation="Horizontal" BackgroundColor=" #373737 "  HeightRequest="114" >
+                                <Image Source="image3" ></Image>
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center" Padding="5,0,0,0">
+                                    <Label  FontFamily="basic" FontSize="25" TextColor="White" Text="Ольга"></Label>
+                                    <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
+                                    <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
+                                </StackLayout>
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
                             </StackLayout>
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+                            <StackLayout Orientation="Horizontal" BackgroundColor=" #373737"  HeightRequest="114" >
+                                <Image Source="image2" ></Image>
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center" Padding="5,0,0,0">
+                                    <Label  FontFamily="basic" FontSize="25" TextColor="White" Text="Ольга"></Label>
+                                    <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
+                                    <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
+                                </StackLayout>
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
                             </StackLayout>
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
+                            <StackLayout Orientation="Horizontal" BackgroundColor="Black"  HeightRequest="114" >
+                                <Image Source="profile" ></Image>
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center" Padding="5,0,0,0">
+                                    <Label  FontFamily="basic" FontSize="25" TextColor="White" Text="Ольга"></Label>
+                                    <Label TextColor="White" FontSize="19" FontFamily="basic" VerticalOptions="Center" Text="20.01.20222" ></Label>
+                                    <Label  TextColor="White" FontSize="19"  FontFamily="basic" Text="Element Studio" ></Label>
+                                </StackLayout>
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
                             </StackLayout>
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
-                            </StackLayout>
-                            <StackLayout Orientation="Vertical" BackgroundColor="Black"  HeightRequest="150" >
 
-                                <Label  FontFamily="basic" FontSize="25" TextColor="White">Ольга</Label>
-                                <Label TextColor="White" FontFamily="basic" FontSize="25" >20.01.20222</Label>
-                                <Label  TextColor="White" FontFamily="basic" FontSize="25" >Element Studio</Label>
-                            </StackLayout>
+
+
 
                         </StackLayout>
 

@@ -5,28 +5,36 @@
     <ContentPage.Content>
         <Grid  >
             <Grid.RowDefinitions>
-                <RowDefinition Height="90"></RowDefinition>
+                <RowDefinition Height="110"></RowDefinition>
                 <RowDefinition Height="*" ></RowDefinition>
                 <RowDefinition Height="16" ></RowDefinition>
             </Grid.RowDefinitions>
             <StackLayout  StyleClass="layout" Grid.Row="0" Orientation="Horizontal"  >
 
-                <Label Text="Елена Самохвалова" FontSize="30"></Label>
+                <Label Text="Елена Самохвалова" StyleClass="layout-header" FontSize="30"></Label>
 
             </StackLayout>
 
             <Frame Grid.Row="1" Grid.RowSpan="2" StyleClass="white-frame">
-                <StackLayout>
-                    <FlexLayout  Grid.Row="1" >
-                    
-                            <Image Source="image3"  HeightRequest="85" WidthRequest="160"/>
-                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
-                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
-                            <Image Source="image3" HeightRequest="85" WidthRequest="160"/>
-                         
+                <ScrollView >
+                    <FlexLayout  Wrap="Wrap"
+                        JustifyContent="SpaceAround"   >
+
+                        <Image Source="image1"   WidthRequest="150"/>
+                        <Image Source="profile"  WidthRequest="173"/>
+                        <Image Source="image3" Margin="0,0,0,19" WidthRequest="335"/>
+                        <Image Source="image3" Margin="0,0,0,40" WidthRequest="335"/>
+                        <Image Source="image1"   WidthRequest="150"/>
+                        <Image Source="profile"  WidthRequest="173"/>
+                        <Image Source="image3"  Margin="0,0,0,19"  WidthRequest="335"/>
+                        <Image Source="image1"   WidthRequest="150"/>
+                        <Image Source="profile"  WidthRequest="173"/>
+                        <Image Source="image3" Margin="0,0,0,19"   WidthRequest="335"/>
+
+
                     </FlexLayout>
-                  
-                </StackLayout>
+
+                </ScrollView>
             </Frame>
             <BoxView Grid.Row="2" BackgroundColor="White"></BoxView>
 
